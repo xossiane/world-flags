@@ -1,0 +1,17 @@
+.ThemeButton{
+    &_container{
+        display: flex;
+        align-content: space-between;
+    &__light{
+        width: 3rem;
+        height: 3rem;
+
+    }
+    &__dark{
+        width: 3rem;
+        height: 3rem; 
+    }}
+
+    
+
+}
