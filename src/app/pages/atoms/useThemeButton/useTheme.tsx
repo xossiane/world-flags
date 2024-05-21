@@ -1,9 +1,13 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 import styles from "./useThemeButton.module.scss";
 
 export const ThemeChanger = () => {
     const { theme, setTheme } = useTheme()
+    const Sun = <FontAwesomeIcon icon={faSun} />
+    const Moon = <FontAwesomeIcon icon={faMoon} />
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => setHasMounted(true), []);
@@ -16,8 +20,8 @@ export const ThemeChanger = () => {
     <div>
       The current theme is: {theme}
       <div className={styles.ThemeButton_container}>
-      <button onClick={() => setTheme('light')} className={styles.ThemeButton_container__light}>Light Mode</button>
-      <button onClick={() => setTheme('dark')} className={styles.ThemeButton_container__dark}>Dark Mode</button>
+      <button onClick={() => setTheme('light')} className={styles.ThemeButton_container__light}>{Sun}</button>
+      <button onClick={() => setTheme('dark')} className={styles.ThemeButton_container__dark}>{Moon}</button>
       </div>
     </div>
   )
