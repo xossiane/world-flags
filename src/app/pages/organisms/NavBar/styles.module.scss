@@ -1,0 +1,18 @@
+.NavBar{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 100vw;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    &__toggle{
+        display: flex;
+        right: 0;
+    }
+    &__text{
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+
+}
