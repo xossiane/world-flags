@@ -27,7 +27,7 @@ export const ThemeChanger = () => {
       mode={theme}
       dark="Dark"
       light="Light"
-      size="md"
+      size="sm"
       inactiveTrackColor="#e2e8f0"
       inactiveTrackColorOnHover="#f8fafc"
       inactiveTrackColorOnActive="#cbd5e1"

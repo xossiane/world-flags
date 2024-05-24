@@ -1,18 +1,26 @@
-.NavBar{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    width: 100vw;
+@use "../../../styles/base/globals" ;
+.NavBar {
+  box-shadow: 0 8px 10px rgb(0 0 0 / 0.2);
+  width: 100vw;
+  display: flex;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  &__toggle {
     display: flex;
-    height: 8rem;
-    justify-content: space-between;
-    align-items: center;
-    &__toggle{
-        display: flex;
-        right: 0;
-    }
-    &__text{
-        margin-left: 2rem;
-        font-size: 2rem;
-    }
+    right: 0;
+  }
+  &__text {
+    font-size: 1.4rem;
 
-
+    margin-left: 1.6rem;
+    @media screen and (min-width: 375px) {
+      margin-left: 2rem;
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 780px) {
+      margin-left: 2rem;
+      font-size: 2.4rem;
+    }
+  }
 }
