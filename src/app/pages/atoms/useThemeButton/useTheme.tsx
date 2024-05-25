@@ -1,10 +1,5 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
-
-
-import styles from "./useThemeButton.module.scss";
 
 import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle';
 import type { Mode } from '@anatoliygatt/dark-mode-toggle';

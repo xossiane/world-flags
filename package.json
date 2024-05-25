@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile:sass": "node-sass styles/main.scss -w"
   },
   "dependencies": {
     "@anatoliygatt/dark-mode-toggle": "^1.0.1",

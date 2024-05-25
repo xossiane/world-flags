@@ -1,0 +1,10 @@
+@use 'variables' as *;
+html[data-theme="dark"] {
+    --background-color: #{$dark-000};
+   
+  }
+
+  html[data-theme="light"] {
+    --background-color: #{$secondary-white};
+   
+  }
